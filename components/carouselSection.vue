@@ -51,7 +51,6 @@
           </NuxtImg>
         </div>
       </slide>
-      
       <template #addons>
         <navigation />
       </template>
@@ -72,35 +71,3 @@ export default {
   },
 };
 </script>
-<style>
-/*
-/*
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.carousel__slide {
-  padding: 10px;
-  min-height: 200px;
-  width: 100%;
-  background-color: #642afb;
-  color: white;
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
-}
-*/
-</style>
