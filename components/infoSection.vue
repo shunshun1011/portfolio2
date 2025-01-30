@@ -37,7 +37,7 @@
         </h2>
       </div>
       <div
-        class="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full"
+        class="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full justify-self-center"
       >
         <div v-for="article in data.contents" v-bind:key="article.id">
           <div
