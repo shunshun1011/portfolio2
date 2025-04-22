@@ -34,7 +34,7 @@
           <ul class="items-center hidden space-x-8 lg:flex">
             <li>
               <a
-                href="/"
+                href="/about"
                 aria-label="About us"
                 title="About us"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -43,7 +43,7 @@
             </li>
             <li>
               <a
-                href="/"
+                href="/menu"
                 aria-label="Menu"
                 title="Menu"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -52,7 +52,7 @@
             </li>
             <li>
               <a
-                href="/"
+                href="/info"
                 aria-label="Infomation"
                 title="Infomation"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -61,7 +61,7 @@
             </li>
             <li>
               <a
-                href="/"
+                href="/contact"
                 aria-label="Contact"
                 title="Contact"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -142,49 +142,39 @@
                   <ul class="space-y-4">
                     <li>
                       <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
+                        href="/about"
+                        aria-label="About us"
+                        title="About us"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >Product</a
+                        >About</a
                       >
                     </li>
                     <li>
                       <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
+                        href="/menu"
+                        aria-label="Menu"
+                        title="Menu"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >Features</a
                       >
                     </li>
                     <li>
                       <a
-                        href="/"
-                        aria-label="Product pricing"
-                        title="Product pricing"
+                        href="/info"
+                        aria-label="Infomation"
+                        title="Infomation"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >Pricing</a
                       >
                     </li>
                     <li>
                       <a
-                        href="/"
-                        aria-label="About us"
-                        title="About us"
+                        href="/contact"
+                        aria-label="Contact"
+                        title="Contact"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >About us</a
                       >
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
-                      >
-                        Sign up
-                      </a>
                     </li>
                   </ul>
                 </nav>
