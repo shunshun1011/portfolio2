@@ -155,7 +155,7 @@
                         aria-label="Menu"
                         title="Menu"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >Features</a
+                        >Menu</a
                       >
                     </li>
                     <li>
@@ -164,7 +164,7 @@
                         aria-label="Infomation"
                         title="Infomation"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >Pricing</a
+                        >Info</a
                       >
                     </li>
                     <li>
@@ -173,7 +173,7 @@
                         aria-label="Contact"
                         title="Contact"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >About us</a
+                        >Contact</a
                       >
                     </li>
                   </ul>
