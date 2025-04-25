@@ -2,7 +2,7 @@
   <div>
     <nav />
     <carouselSection />
-    <HeroSection />
+    <HeroSection id="body"/>
     <infoSection />
     <contactSection />
   </div>
