@@ -7,7 +7,7 @@
           <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-gray-900 text-center">
             About
           </h1>
-          <div class="h-1 w-20 bg-indigo-500 rounded mx-auto"></div>
+          <div class="h-1 w-20 bg-secondary-500 rounded mx-auto"></div>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
       </div>
       <div
         class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-tertiary-800">
           Make Your Wishes <br class="hidden lg:inline-block" />
           come true
         </h1>
