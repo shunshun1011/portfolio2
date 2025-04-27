@@ -7,7 +7,7 @@
             <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-gray-900 text-center">
               Information
             </h1>
-            <div class="h-1 w-20 bg-indigo-500 rounded justify-self-center"></div>
+            <div class="h-1 w-20 bg-indigo-500 rounded mx-auto"></div>
           </div>
         </div>
       </div>

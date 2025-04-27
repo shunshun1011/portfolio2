@@ -13,7 +13,7 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="h-screen w-screen">
+      <div class="h-screen w-screen brightness-50">
         <carousel class="h-screen w-screen bg-gray-300" autoplay="5000" wrapAround="true" pauseAutoplayOnHover="true">
           <slide class="h-screen w-screen">
             <div class="relative w-full h-full">
