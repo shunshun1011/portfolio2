@@ -1,5 +1,6 @@
 <template>
-  <section class="text-gray-600 body-font">
+  <section
+    class="text-gray-600 body-font bg-opacity-50">
     <div class="container px-5 md:py-16 py-8 mx-auto ">
       <div class="flex flex-wrap w-full ">
         <div class="w-full mb-6">

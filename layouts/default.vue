@@ -1,7 +1,11 @@
 <template>
-  <div>
+  <div class="font-zen">
     <mainHeader />
-    <slot />
+    <div
+      class="bg-cover bg-no-repeat bg-fixed bg-opacity-30 bg-[url('/assets/images/background2.webp')]"
+    >
+      <slot />
+    </div>
     <mainFooter />
   </div>
 </template>

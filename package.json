@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.7.5",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
     "@vue/eslint-config-typescript": "^14.3.0",

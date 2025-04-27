@@ -1,8 +1,8 @@
 <template>
   <div>
     <nav />
-    <carouselSection />
-    <HeroSection id="body"/>
+    <carouselSection/>
+    <HeroSection id="body" />
     <infoSection />
     <contactSection />
   </div>

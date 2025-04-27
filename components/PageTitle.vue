@@ -1,12 +1,9 @@
 <template>
     <div class="text-center">
-        <h1 class="text-4xl lg:text-5xl font-bold whitespace-pre-line mb-4" :class="[
-            isWhite ? ' text-white' : ' text-black',
-            isIrohakaku ? 'irohakaku' : 'noto-sans-jp',
-        ]">
+        <h1 class="text-4xl lg:text-5xl font-bold whitespace-pre-line mb-4 text-tertiary-900">
             {{ title }}
         </h1>
-        <p class="text-base lg:text-lg" :class="[isWhite ? ' text-white' : ' text-black']">
+        <p class="text-3xl lg:text-2xl text-tertiary-700">
             {{ subtitle }}
         </p>
     </div>
