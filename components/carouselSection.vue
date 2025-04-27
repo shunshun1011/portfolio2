@@ -2,7 +2,7 @@
   <main>
     <section class="relative flex items-center justify-center h-screen overflow-hidden">
       <div class="container mx-auto max-w-screen-md absolute transform z-20">
-        <page-title title='hair salon らしさ。' subtitle="もっと自由に、もっとあなたらしく。" is-white="true"></page-title>
+        <page-title title='hair salon らしさ。' subtitle="もっと自由に、もっとあなたらしさを。" is-white="true"></page-title>
         <div class="text-center mt-12">
           <NuxtLink to="#body" href="'#'+body" class="block" v-smooth-scroll>
             <small class="text-sm text-white mb-0"> Scroll </small>

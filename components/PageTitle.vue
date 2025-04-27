@@ -3,7 +3,7 @@
         <h1 class="text-4xl lg:text-5xl font-bold whitespace-pre-line mb-4 text-tertiary-900">
             {{ title }}
         </h1>
-        <p class="text-3xl lg:text-2xl text-tertiary-700">
+        <p class="text-2xl lg:text-xl text-tertiary-700">
             {{ subtitle }}
         </p>
     </div>
