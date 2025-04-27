@@ -1,21 +1,14 @@
 <template>
   <section class="text-gray-600 body-font relative">
-    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 justify-self-center">
-      <h2
-        class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-        <span class="relative inline-block">
-          <svg viewBox="0 0 52 24" fill="currentColor"
-            class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-            <defs>
-              <pattern id="db164e35-2a0e-4c0f-ab05-f14edc6d4d30" x="0" y="0" width=".135" height=".30">
-                <circle cx="1" cy="1" r=".7"></circle>
-              </pattern>
-            </defs>
-            <rect fill="url(#db164e35-2a0e-4c0f-ab05-f14edc6d4d30)" width="52" height="24"></rect>
-          </svg>
-          <span class="title-font relative">Access & Contact</span>
-        </span>
-      </h2>
+    <div class="container px-5 md:py-16 py-8 mx-auto ">
+      <div class="flex flex-wrap w-full ">
+        <div class="w-full mb-6">
+          <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-gray-900 text-center">
+            Access & Contact
+          </h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded justify-self-center"></div>
+        </div>
+      </div>
     </div>
     <div class="container px-5 pb-24 mx-auto flex sm:flex-nowrap flex-wrap">
       <div
