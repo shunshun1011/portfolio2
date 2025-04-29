@@ -1,10 +1,9 @@
 <template>
-  <section
-    class="text-gray-600 body-font">
-    <div class="container px-5 md:py-16 py-8 mx-auto ">
-      <div class="flex flex-wrap w-full ">
+  <section class="text-tertiary-600 body-font">
+    <div class="container px-5 md:py-16 py-8 mx-auto">
+      <div class="flex flex-wrap w-full">
         <div class="w-full mb-6">
-          <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-gray-900 text-center">
+          <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-tertiary-900 text-center">
             About
           </h1>
           <div class="h-1 w-20 bg-secondary-500 rounded mx-auto"></div>
@@ -20,18 +19,17 @@
       <div
         class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-tertiary-800">
-          Make Your Wishes <br class="hidden lg:inline-block" />
-          come true
+          あなたらしさを大切にする<br class="hidden lg:inline-block" />
+          心地よいヘアサロン
         </h1>
         <p class="mb-8 leading-relaxed">
-          We propose the perfect hairstyle for you, who dose not want to
-          compromise on either business or private life.
+          一人ひとりの「らしさ」を大切にしながら、ライフスタイルに寄り添ったヘアスタイルをご提案します。
         </p>
         <div class="flex justify-center">
-          <button
-            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg">
+          <NuxtLink to="/about" href="/about"
+            class="ml-4 inline-flex text-tertiary-700 bg-secondary-500 border-0 py-2 px-6 focus:outline-none hover:bg-secondary-600 rounded text-lg">
             learn more...
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </div>

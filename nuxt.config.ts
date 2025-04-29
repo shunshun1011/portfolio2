@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     "nuxt-microcms-module",
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
-    "@nuxt/eslint",
     "dayjs-nuxt",
     "@nuxtjs/google-fonts",
   ],
