@@ -25,21 +25,22 @@
 
 <script setup>
 const route = useRoute();
-//const pass = useRuntimeConfig();
-const slug = String(route.params.slug);
+const slug = computed(() => route.params.slug);
+console.log('slug:', slug.value)
+// データ取得
+const { data: article, refresh } = await useAsyncData('article', () =>
+  $fetch('/api/postDetail', {
+    params: { slug: String(slug.value) },
+  })
+);
 
-const { data: article } = await useFetch(`/api/postDetail`, {
-  params: {slug: slug}
-})
-/*if (!article.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
-}*/
-/*
-const { data: article } = await useFetch(`/info/${slug}`, {
-  baseURL: pass.public.passURL,
-  headers: {
-    "X-MICROCMS-API-KEY": pass.passKey,
-  },
+// slug が変化したらデータ再取得
+watch(slug, () => {
+  refresh();
 });
-*/
+
+// 404エラーハンドリング
+if (!article.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page Not Found' });
+}
 </script>

@@ -16,7 +16,6 @@
           </p>
           <NuxtLink
             :to="`/info/${post.id}`"
-            :href="`/info/${post.id}`"
             class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
           >
             {{ post.title }}
@@ -25,8 +24,7 @@
             {{ post.lead }}
           </p>
           <NuxtLink
-            :to="`info/${post.id}`"
-            href="`info/${post.id}`"
+            :to="`/info/${post.id}`"
             class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
             Read more
@@ -37,7 +35,6 @@
   </div>
 </template>
 <script setup>
-//const props = defineProps([posts])
 defineProps({
   posts: Object,
 });

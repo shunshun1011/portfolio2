@@ -16,8 +16,32 @@
         </section>
         <section class="text-tertiary-600 body-font" id="body">
             <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                <InfoHome :page="1" />
+                <InfoHome :page="page" />
             </div>
         </section>
     </main>
 </template>
+<script setup>
+const route = useRoute();
+const page = computed(() => parseInt(route.params.page || "1", 10));
+
+const limit = 3;
+const posts = ref(null);
+
+watchEffect(async () => {
+  const queries = {
+    limit,
+    offset: (page.value - 1) * limit,
+  };
+
+  const { data } = await useFetch("/api/postList", {
+    params: queries,
+  });
+
+  posts.value = data.value;
+});
+
+const numPages = computed(() =>
+  posts.value ? Math.ceil(posts.value.totalCount / limit) : 1
+);
+</script>

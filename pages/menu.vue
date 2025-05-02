@@ -4,7 +4,7 @@
       <NuxtImg src="/images/Top03.jpg" alt="carousel_01" width="1900" height="1068" format="webp"
         class="w-screen h-screen object-cover absolute left-0 top-0 filter opacity-30" />
       <div class="container mx-auto max-w-screen-md absolute transform">
-        <page-title title="MENU" subtitle="Cut" is-white="true"></page-title>
+        <page-title title="MENU" subtitle="カットメニュー" is-white="true"></page-title>
         <div class="text-center mt-12">
           <NuxtLink to="#body" href="'#'+body" class="block" v-smooth-scroll>
             <small class="text-sm text-white mb-0"> Scroll </small>
