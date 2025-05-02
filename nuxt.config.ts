@@ -26,8 +26,10 @@ export default defineNuxtConfig({
     apiKey: process.env.API_KEY,
   },
   runtimeConfig: {
+    srcDir: "src/",
     public: {
       passURL: process.env.BASE_URL,
+      serviceDomain: process.env.SERVICE_DOMAIN,
     },
     passKey: process.env.API_KEY,
   },
