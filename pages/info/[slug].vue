@@ -26,7 +26,7 @@
 <script setup>
 const route = useRoute();
 const slug = computed(() => route.params.slug);
-console.log('slug:', slug.value)
+
 // データ取得
 const { data: article, refresh } = await useAsyncData('article', () =>
   $fetch('/api/postDetail', {
@@ -43,4 +43,21 @@ watch(slug, () => {
 if (!article.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found' });
 }
+
+// SEO設定
+useHead({
+  title: article.value.title,
+  meta: [
+    { name: 'description', content: article.value.lead },
+    { property: 'og:title', content: article.value.title },
+    { property: 'og:description', content: article.value.lead || '' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:url', content: `https://example.com/info/${article.value.id}` },
+    { property: 'og:image', content: article.value.eyecatch?.url || 'https://example.com/default-ogp.jpg' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ],
+  link: [
+    { rel: 'canonical', href: `https://example.com/info/${article.value.id}` }
+  ]
+});
 </script>
