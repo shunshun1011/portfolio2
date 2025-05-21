@@ -8,11 +8,10 @@
 <script>
 export default {
   props: {
-    destination:{
+    destination: {
       type: String,
       required: true,
     }
   }
 }
 </script>
-

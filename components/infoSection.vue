@@ -52,6 +52,6 @@ const { data } = await useFetch("/info?limit=3", {
 */
 const { data: posts } = await useFetch("/api/postList")
 const { data: post3 } = computed(() => {
-  return this.posts.slice(0,3)
+  return this.posts.slice(0, 3)
 });
 </script>
