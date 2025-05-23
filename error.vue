@@ -5,7 +5,7 @@
             <p class="text-lg text-tertiary-900 mb-4">
                 {{ error.message || 'ページが見つかりませんでした。' }}
             </p>
-            <NuxtLink to="/" class="text-white bg-secondary-500 px-4 py-2 rounded hover:bg-secondary-600 transition">
+            <NuxtLink to="/" class="text-tertiary-50 bg-secondary-500 px-4 py-2 rounded hover:bg-secondary-600 transition">
                 トップページへ戻る
             </NuxtLink>
         </div>
