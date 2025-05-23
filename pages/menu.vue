@@ -7,7 +7,7 @@
         <page-title title="MENU" subtitle="カットメニュー" is-white="true"></page-title>
         <div class="text-center mt-12">
           <NuxtLink to="#body" href="'#'+body" class="block" v-smooth-scroll>
-            <small class="text-sm text-white mb-0"> Scroll </small>
+            <small class="text-sm text-tertiary-50 mb-0"> Scroll </small>
             <img class="h-10 w-10 mx-auto animate-bounce" src="/assets/images/scroll.svg" width="48" height="48"
               alt="scroll" />
           </NuxtLink>
