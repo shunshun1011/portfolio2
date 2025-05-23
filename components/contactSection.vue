@@ -66,7 +66,7 @@
         </div>
 
         <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+          <label for="phone" class="leading-7 text-sm text-tertiary-600">Phone Number</label>
           <input type="text" id="phone" name="phone" v-model="phone" class="mt-1 block w-full border rounded p-2" />
           <p v-if="errors.phone" class="text-red-500 text-sm mt-1">
             {{ errors.phone }}

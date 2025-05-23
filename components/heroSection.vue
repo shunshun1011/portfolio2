@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
+    <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
         <NuxtImg src="/images/Top05.jpg" alt="hero" width="720" height="600" format="webp"
           class="object-cover object-center rounded">
