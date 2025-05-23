@@ -15,12 +15,17 @@
       </div>
     </section>
     <section id="body" class="text-tertiary-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-tertiary-900">Pricing</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Banh mi cornhole echo park skateboard authentic crucifix
-            neutra tilde lyft biodiesel artisan direct trade mumblecore 3 wolf moon twee</p>
+      <div class="container px-5 md:py-16 py-8 mx-auto">
+        <div class="flex flex-wrap w-full">
+          <div class="w-full mb-6">
+            <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-tertiary-900 text-center">
+              Price
+            </h1>
+            <div class="h-1 w-20 bg-secondary-500 rounded mx-auto"></div>
+          </div>
         </div>
+      </div>
+      <div class="container px-5 pb-24 mx-auto">
         <div class="lg:w-2/3 w-full mx-auto overflow-auto pb-3">
           <table class="table-fixed w-full text-left whitespace-no-wrap">
             <thead>
@@ -100,7 +105,7 @@
 <script>
 import PageTitle from '~/components/PageTitle.vue'
 
-export default{
+export default {
   components: {
     PageTitle,
   },
