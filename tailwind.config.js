@@ -67,3 +67,18 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography")],
 };
+export default {
+  theme: {
+    extend: {
+      animation: {
+        'fade-in': 'fadeIn 1s ease-in forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+    },
+  },
+}

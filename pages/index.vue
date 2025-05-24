@@ -1,13 +1,31 @@
 <template>
   <div>
-    <nav />
-    <carouselSection/>
-    <HeroSection id="body" />
-    <infoSection />
-    <contactSection />
+    <LoadingScreen :visible="showOpening" />
+    <!-- ヘッダー・フッターは isLoading が false のときだけ表示 -->
+    <div v-if="!showOpening">
+      <nav />
+      <carouselSection />
+      <HeroSection id="body" />
+      <infoSection />
+      <contactSection />
+      <footer />
+    </div>
   </div>
 </template>
 <script setup>
+const showOpening = ref(true);
+onMounted(() => {
+  // 初回表示のみアニメーション
+  if (!sessionStorage.getItem('hasVisited')) {
+    showOpening.value = true;
+
+    setTimeout(() => {
+      showOpening.value = false;
+      sessionStorage.setItem('hasVisited', 'true');
+    }, 3000);
+  }
+});
+
 useHead({
   title: 'Hair Salon らしさ | 自然体でいられる美容室',
   meta: [

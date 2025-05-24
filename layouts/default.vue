@@ -1,11 +1,27 @@
 <template>
   <div class="font-zen bg-secondary-50">
-    <mainHeader />
+    <mainHeader v-if="!showOpening" />
     <div class="bg-cover bg-no-repeat bg-fixed lg:bg-[url('/assets/images/background2.webp')] bg-none">
-      <div class="">
+      <div>
         <slot />
       </div>
     </div>
-    <mainFooter />
+    <mainFooter v-if="!showOpening" />
   </div>
 </template>
+<script setup>
+const route = useRoute();
+const showOpening = ref(false);
+
+// 初回トップページ読み込みか判定
+onMounted(() => {
+  if (route.path === '/' && !sessionStorage.getItem('hasVisited')) {
+    showOpening.value = true;
+
+    setTimeout(() => {
+      showOpening.value = false;
+      sessionStorage.setItem('hasVisited', 'true');
+    }, 3000); // アニメーション表示時間（3秒）
+  }
+});
+</script>
