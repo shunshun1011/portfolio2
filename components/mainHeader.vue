@@ -3,14 +3,8 @@
     <div class="bg-primary-300">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
-          <a href="/" aria-label="Yamauchi Salon" title="Yamauchi Salon" class="inline-flex items-center">
-            <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2"
-              stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-              <rect x="3" y="1" width="7" height="12"></rect>
-              <rect x="3" y="17" width="7" height="6"></rect>
-              <rect x="14" y="1" width="7" height="6"></rect>
-              <rect x="14" y="11" width="7" height="12"></rect>
-            </svg>
+          <a href="/" aria-label="HairSalon らしさ。" title="HairSalon らしさ。" class="inline-flex items-center">
+            <img src="~/assets/images/logo.svg" alt="ロゴ" class="w-8 text-tertiary-900" />
             <span class="ml-2 text-xl font-bold tracking-wide text-tertiary-900 uppercase">らしさ。</span>
           </a>
           <ul class="items-center hidden space-x-8 lg:flex">
@@ -48,14 +42,7 @@
                 <div class="flex items-center justify-between mb-4">
                   <div>
                     <a href="/" aria-label="YAMAUCHI" title="YAMAUCHI" class="inline-flex items-center">
-                      <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round"
-                        stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
-                        fill="none">
-                        <rect x="3" y="1" width="7" height="12"></rect>
-                        <rect x="3" y="17" width="7" height="6"></rect>
-                        <rect x="14" y="1" width="7" height="6"></rect>
-                        <rect x="14" y="11" width="7" height="12"></rect>
-                      </svg>
+                      <img src="~/assets/images/logo.svg" alt="ロゴ" class="w-8 text-tertiary-900" />
                       <span class="ml-2 text-xl font-bold tracking-wide text-tertiary-900 uppercase">らしさ</span>
                     </a>
                   </div>

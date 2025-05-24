@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="flex items-center justify-center h-screen w-full relative bg-secondary-50">
-      <NuxtImg src="/images/Top03.jpg" alt="carousel_01" width="1900" height="1068" format="webp"
+      <NuxtImg src="/images/Top06.jpg" alt="carousel_01" width="1900" height="1068" format="webp"
         class="w-screen h-screen object-cover absolute left-0 top-0 filter opacity-30" />
       <div class="container mx-auto max-w-screen-md absolute transform">
         <page-title title="MENU" subtitle="カットメニュー" is-white="true"></page-title>
