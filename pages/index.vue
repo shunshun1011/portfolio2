@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup>
-const showOpening = ref(true);
+const showOpening = ref(false);
 onMounted(() => {
   // 初回表示のみアニメーション
   if (!sessionStorage.getItem('hasVisited')) {
