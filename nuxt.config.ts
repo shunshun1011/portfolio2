@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "dayjs-nuxt",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/sitemap",
   ],
   image: {
     screens: {
@@ -48,4 +49,13 @@ export default defineNuxtConfig({
       ],
     },
   },
+  /*
+  sitemap: {
+    hostname: "https://example.com",
+    routes: async () => {
+      const res = await fetch("https://example.microcms.io/api/v1/info");
+      const posts = await res.json();
+      return posts.contents.map((post) => `/info/${post.id}`);
+    },
+  },*/
 });
