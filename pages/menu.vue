@@ -22,7 +22,7 @@
         </div>
         <div class="grid md:grid-cols-2 gap-6">
           <div v-for="item in priceList" :key="item.title"
-            class="bg-primary-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+            class="bg-primary-50 p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-105 transform transition-all duration-300">
             <h2 class="text-lg font-semibold text-tertiary-900 mb-2">{{ item.title }}</h2>
             <ul>
               <li v-for="option in item.options" :key="option.label"
