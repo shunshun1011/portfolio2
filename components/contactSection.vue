@@ -50,7 +50,7 @@
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-tertiary-600">Name</label>
           <input type="text" id="name" name="name" v-model="name" required
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-tertiary-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            class="w-full bg-primary-50 rounded border border-secondary-300 focus:border-secondary-500 focus:ring-2 focus:ring-secondary-200 text-base outline-none text-tertiary-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
           <p v-if="errors.name" class="text-red-500 text-sm mt-1">
             {{ errors.name }}
           </p>
@@ -59,7 +59,7 @@
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-tertiary-600">Email</label>
           <input type="email" id="email" name="email" v-model="email" required
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-tertiary-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            class="w-full bg-primary-50 rounded border border-secondary-300 focus:border-secondary-500 focus:ring-2 focus:ring-secondary-200 text-base outline-none text-tertiary-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
           <p v-if="errors.email" class="text-red-500 text-sm mt-1">
             {{ errors.email }}
           </p>
@@ -67,7 +67,8 @@
 
         <div class="mb-4">
           <label for="phone" class="leading-7 text-sm text-tertiary-600">Phone Number</label>
-          <input type="text" id="phone" name="phone" v-model="phone" class="mt-1 block w-full border rounded p-2" />
+          <input type="text" id="phone" name="phone" v-model="phone"
+            class="w-full bg-primary-50 rounded border border-secondary-300 focus:border-secondary-500 focus:ring-2 focus:ring-secondary-200 text-base outline-none text-tertiary-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
           <p v-if="errors.phone" class="text-red-500 text-sm mt-1">
             {{ errors.phone }}
           </p>
@@ -76,7 +77,7 @@
         <div class="relative mb-4">
           <label for="message" class="leading-7 text-sm text-tertiary-600">Message</label>
           <textarea id="message" name="message" v-model="message" required
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-tertiary-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            class="w-full bg-primary-50 rounded border border-secondary-300 focus:border-secondary-500 focus:ring-2 focus:ring-secondary-200 text-base outline-none text-tertiary-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
           <p v-if="errors.message" class="text-red-500 text-sm mt-1">
             {{ errors.message }}
           </p>
