@@ -16,98 +16,64 @@
     </section>
     <section id="body" class="text-tertiary-600 body-font">
       <div class="container px-5 md:py-16 py-8 mx-auto">
-        <div class="flex flex-wrap w-full">
-          <div class="w-full mb-6">
-            <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-tertiary-900 text-center">
-              Price
-            </h1>
-            <div class="h-1 w-20 bg-secondary-500 rounded mx-auto"></div>
+        <div class="text-center mb-10">
+          <h1 class="sm:text-3xl text-2xl font-bold text-tertiary-900">Price</h1>
+          <div class="h-1 w-20 bg-secondary-500 rounded mx-auto mt-2"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div v-for="item in priceList" :key="item.title"
+            class="bg-primary-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <h2 class="text-lg font-semibold text-tertiary-900 mb-2">{{ item.title }}</h2>
+            <ul>
+              <li v-for="option in item.options" :key="option.label"
+                class="flex justify-between py-2 border-b border-secondary-300 last:border-none">
+                <span>{{ option.label }}</span>
+                <span class="font-semibold">{{ option.price }}</span>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="container px-5 pb-24 mx-auto">
-        <div class="lg:w-2/3 w-full mx-auto overflow-auto pb-3">
-          <table class="table-fixed w-full text-left whitespace-no-wrap">
-            <thead>
-              <tr>
-                <th
-                  class="px-4 py-3 tracking-wider font-medium text-tertiary-900 text-sm bg-secondary-300 rounded-tl rounded-bl">
-                  Cut</th>
-                <th class="px-4 py-3 tracking-wider font-medium text-tertiary-900 text-sm bg-secondary-300"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="px-4 py-3 text-center">一般</td>
-                <td class="px-4 py-3 text-center">¥ 6,000</td>
-              </tr>
-              <tr>
-                <td class="border-t-2 border-secondary-200 px-4 py-3 text-center">高校生</td>
-                <td class="border-t-2 border-secondary-200 px-4 py-3 text-center">¥ 5,000</td>
-              </tr>
-              <tr>
-                <td class="border-t-2 border-secondary-200 px-4 py-3 text-center">中学生以下</td>
-                <td class="border-t-2 border-secondary-200 px-4 py-3 text-center">¥ 3,000</td>
-              </tr>
-              <tr>
-                <td class="border-t-2 border-b-2 border-secondary-200 px-4 py-3 text-center">前髪カット</td>
-                <td class="border-t-2 border-b-2 border-secondary-200 px-4 py-3 text-center">¥ 1,100</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="lg:w-2/3 w-full mx-auto overflow-auto py-3">
-          <table class="table-fixed w-full text-left whitespace-no-wrap">
-            <thead>
-              <tr>
-                <th
-                  class="px-4 py-3 tracking-wider font-medium text-tertiary-900 text-sm bg-secondary-300 rounded-tl rounded-bl">
-                  Perm</th>
-                <th class="px-4 py-3 tracking-wider font-medium text-tertiary-900 text-sm bg-secondary-300"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="px-4 py-3 text-center">パーマ</td>
-                <td class="px-4 py-3 text-center">¥ 8,000 ~ </td>
-              </tr>
-              <tr>
-                <td class="border-t-2 border-secondary-200 px-4 py-3 text-center">デジタルパーマ</td>
-                <td class="border-t-2 border-secondary-200 px-4 py-3 text-center">¥ 11,000 ~ </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="lg:w-2/3 w-full mx-auto overflow-auto py-3">
-          <table class="table-fixed w-full text-left whitespace-no-wrap">
-            <thead>
-              <tr>
-                <th
-                  class="px-4 py-3 tracking-wider font-medium text-tertiary-900 text-sm bg-secondary-300 rounded-tl rounded-bl">
-                  Color</th>
-                <th class="px-4 py-3 tracking-wider font-medium text-tertiary-900 text-sm bg-secondary-300"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="px-4 py-3 text-center">カラー</td>
-                <td class="px-4 py-3 text-center">¥ 6,000 ~ </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </section>
   </main>
 
 </template>
-
-<script>
+<script setup>
 import PageTitle from '~/components/PageTitle.vue'
 
-export default {
-  components: {
-    PageTitle,
+const priceList = [
+  {
+    title: "Cut",
+    options: [
+      { label: "一般", price: "¥6,000" },
+      { label: "高校生", price: "¥5,000" },
+      { label: "中学生以下", price: "¥3,000" },
+      { label: "小学生未満", price: "¥2,000" },
+      { label: "前髪カット", price: "¥1,100" }
+    ]
   },
-}
+  {
+    title: "Perm",
+    options: [
+      { label: "パーマ", price: "¥8,000〜" },
+      { label: "デジタルパーマ", price: "¥11,000〜" }
+    ]
+  },
+  {
+    title: "Color",
+    options: [
+      { label: "カラー", price: "¥6,000〜" },
+      { label: "髪質改善カラー", price: "¥9,000〜"},
+      { label: "ハイライトカラー", price: "¥10,000〜" },
+      { label: "インナーカラー", price: "¥13,000〜"}
+    ]
+  }, {
+    title: "Head Spa",
+    options: [
+      { label: "アロマヘッドスパ", price: "¥3,000" },
+      { label: "なんかすごいヘッドスパ", price: "¥4,000" },
+      { label: "もっとすごいヘッドスパ", price: "¥5,000〜" },
+    ]
+  },
+];
 </script>
