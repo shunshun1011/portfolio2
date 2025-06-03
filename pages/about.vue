@@ -91,3 +91,15 @@
         </section>
     </main>
 </template>
+<script setup>
+useHead({
+    title: '私たちについて | Hair Salon らしさ',
+    meta: [
+        { name: 'description', content: 'Hair Salon らしさの想い、スタイリストの紹介などをご覧いただけます。' },
+        { property: 'og:title', content: '私たちについて | Hair Salon らしさ' },
+        { property: 'og:description', content: 'Hair Salon らしさ。は、ナチュラルな雰囲気でくつろげる美容室。あなたらしいスタイルを一緒に見つけます。' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://your-domain.com/about' },
+    ],
+})
+</script>
