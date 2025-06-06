@@ -51,9 +51,9 @@ if (!article.value) {
 useHead({
   title: article.title + '| Hair Salon らしさ。',
   meta: [
-    { name: "description", content: dateFormat(article.publishedAt ?? article.createdAt) },
-    { property: "og:title", content: article.title + '| Hair Salon らしさ。'},
-    { property: "og:description", content: dateFormat(article.publishedAt ?? article.createdAt) },
+    { name: "description", content: 'Hair Salon らしさ。 | ' + article.value.lead },
+    { property: "og:title", content: article.value.title + '| Hair Salon らしさ。'},
+    { property: "og:description", content: 'Hair Salon らしさ。 | ' + article.value.lead },
     { property: "og:type", content: "article" },
     {
       property: "og:url",

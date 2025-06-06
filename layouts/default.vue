@@ -31,7 +31,9 @@ useHead({
     {
       property: 'og:image',
       content: `${process.env.NUXT_PUBLIC_SITE_URL}/ogp.png`
-    }
+    },
+    { name: 'twitter:image', content: `${process.env.NUXT_PUBLIC_SITE_URL}/ogp.png` },
+    { name: 'twitter:card', content: 'summary_large_image' }
   ]
 })
 </script>
