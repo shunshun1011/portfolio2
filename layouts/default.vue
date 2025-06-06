@@ -30,7 +30,7 @@ useHead({
   meta: [
     {
       property: 'og:image',
-      content: `${process.env.NUXT_PUBLIC_SITE_URL}/default-ogp.png`
+      content: `${process.env.NUXT_PUBLIC_SITE_URL}/ogp.png`
     }
   ]
 })
