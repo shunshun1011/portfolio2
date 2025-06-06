@@ -76,4 +76,16 @@ const priceList = [
     ]
   },
 ];
+
+useHead({
+  title: 'Menu | Hair Salon らしさ。',
+  meta: [
+    { name: 'description', content: 'Hair Salon らしさ。のカットメニューはこちらから。メニューになくても気軽にご相談ください。' },
+    { property: 'og:title', content: 'Menu | Hair Salon らしさ。' },
+    { property: 'og:description', content: 'Hair Salon らしさ。は、ナチュラルな雰囲気でくつろげる美容室。あなたらしいスタイルを一緒に見つけます。' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: `${process.env.NUXT_PUBLIC_SITE_URL}/menu` },
+  ],
+  link: [{ rel: 'canonical', href: `${process.env.NUXT_PUBLIC_SITE_URL}/menu` }]
+})
 </script>

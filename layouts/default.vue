@@ -24,4 +24,14 @@ onMounted(() => {
     }, 3000); // アニメーション表示時間（3秒）
   }
 });
+
+// OGP画像
+useHead({
+  meta: [
+    {
+      property: 'og:image',
+      content: `${process.env.NUXT_PUBLIC_SITE_URL}/default-ogp.png`
+    }
+  ]
+})
 </script>

@@ -33,12 +33,8 @@ useHead({
     { property: 'og:title', content: 'Hair Salon らしさ。 | 自然体でいられる美容室' },
     { property: 'og:description', content: 'Hair Salon らしさ。は、ナチュラルな雰囲気でくつろげる美容室。あなたらしいスタイルを一緒に見つけます。' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://wthk-portfoliosite2.netlify.app/' },
-    { property: 'og:image', content: 'https://wthk-portfoliosite2.netlify.app/ogp.jpg' },
-    { name: 'twitter:card', content: 'summary_large_image' }
+    { property: 'og:url', content: `${process.env.NUXT_PUBLIC_SITE_URL}/` },
   ],
-  link: [
-    { rel: 'canonical', href: 'https://wthk-portfoliosite2.netlify.app/' }
-  ]
+  link: [{ rel: 'canonical', href: `${process.env.NUXT_PUBLIC_SITE_URL}/` }]
 })
 </script>

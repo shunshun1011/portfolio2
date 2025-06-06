@@ -54,4 +54,38 @@ watchEffect(async () => {
 const numPages = computed(() =>
   posts.value ? Math.ceil(posts.value.totalCount / limit) : 1
 );
+
+// SEO対策
+const currentPage = Number(route.query.page || 1)
+const pageTitle = currentPage > 1
+    ? `お知らせ一覧 - ページ${currentPage} | Hair Salon らしさ`
+    : `お知らせ一覧 | Hair Salon らしさ`
+
+const pageDescription = currentPage > 1
+    ? `Hair Salon らしさのお知らせ一覧ページ（ページ${currentPage}）です。最新ニュースやキャンペーン情報をご覧ください。`
+    : `Hair Salon らしさのお知らせ一覧ページです。最新ニュースやキャンペーン情報をご紹介します。`
+
+const canonicalUrl = currentPage > 1
+    ? `${process.env.NUXT_PUBLIC_SITE_URL}/info?page=${currentPage}`
+    : `${process.env.NUXT_PUBLIC_SITE_URL}/info`
+
+useHead({
+    title: pageTitle,
+    meta: [
+        { name: 'description', content: pageDescription },
+        { property: 'og:title', content: pageTitle },
+        { property: 'og:description', content: pageDescription },
+        { property: 'og:url', content: canonicalUrl },
+    ],
+    link: [
+        { rel: 'canonical', href: canonicalUrl },
+    ]
+})
+
+// 任意で robots を制御したい場合（例：2ページ目以降を noindex）
+if (currentPage > 1) {
+    useHead({
+        meta: [{ name: 'robots', content: 'noindex, follow' }]
+    })
+}
 </script>

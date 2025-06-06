@@ -93,13 +93,14 @@
 </template>
 <script setup>
 useHead({
-    title: '私たちについて | Hair Salon らしさ',
+    title: 'About | Hair Salon らしさ。',
     meta: [
-        { name: 'description', content: 'Hair Salon らしさの想い、スタイリストの紹介などをご覧いただけます。' },
-        { property: 'og:title', content: '私たちについて | Hair Salon らしさ' },
+        { name: 'description', content: 'Hair Salon らしさ。の想い、スタイリストの紹介などをご覧いただけます。' },
+        { property: 'og:title', content: 'About | Hair Salon らしさ。' },
         { property: 'og:description', content: 'Hair Salon らしさ。は、ナチュラルな雰囲気でくつろげる美容室。あなたらしいスタイルを一緒に見つけます。' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://your-domain.com/about' },
+        { property: 'og:url', content: `${process.env.NUXT_PUBLIC_SITE_URL}/about` },
     ],
+    link: [{ rel: 'canonical', href: `${process.env.NUXT_PUBLIC_SITE_URL}/about` }]
 })
 </script>

@@ -18,7 +18,7 @@ defineProps({
 })
 
 useHead({
-    title: 'ページが見つかりません | Hair Salon らしさ',
+    title: 'ページが見つかりません | Hair Salon らしさ。',
     meta: [
         { name: 'robots', content: 'noindex' }, // 検索エンジンにインデックスさせない
         { name: 'description', content: 'お探しのページは見つかりませんでした。' },

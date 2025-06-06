@@ -35,12 +35,10 @@ const { data: article, refresh } = await useAsyncData("article", () =>
     params: { slug: String(slug.value) },
   })
 );
-
 // slug が変化したらデータ再取得
 watch(slug, () => {
   refresh();
 });
-
 // 404エラーハンドリング
 if (!article.value) {
   throw createError({
@@ -51,25 +49,19 @@ if (!article.value) {
 
 // SEO設定
 useHead({
-  title: article.value.title,
+  title: article.title + '| Hair Salon らしさ。',
   meta: [
-    { name: "description", content: article.value.lead },
-    { property: "og:title", content: article.value.title },
-    { property: "og:description", content: article.value.lead || "" },
+    { name: "description", content: dateFormat(article.publishedAt ?? article.createdAt) },
+    { property: "og:title", content: article.title + '| Hair Salon らしさ。'},
+    { property: "og:description", content: dateFormat(article.publishedAt ?? article.createdAt) },
     { property: "og:type", content: "article" },
     {
       property: "og:url",
-      content: `https://example.com/info/${article.value.id}`,
+      content: `${process.env.NUXT_PUBLIC_SITE_URL}/info/${article.value.id}`,
     },
-    {
-      property: "og:image",
-      content:
-        article.value.eyecatch?.url || "https://example.com/default-ogp.jpg",
-    },
-    { name: "twitter:card", content: "summary_large_image" },
   ],
   link: [
-    { rel: "canonical", href: `https://example.com/info/${article.value.id}` },
+    { rel: "canonical", href: `${process.env.NUXT_PUBLIC_SITE_URL}/info/${article.value.id}` },
   ],
 });
 </script>

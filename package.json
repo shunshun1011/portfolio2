@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.9.0",
-    "@nuxtjs/sitemap": "^7.3.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@tsparticles/vue3": "^3.0.1",
     "dayjs": "^1.11.13",
@@ -20,6 +19,7 @@
     "microcms-js-sdk": "^3.2.0",
     "nuxt": "^3.15.2",
     "nuxt-microcms-module": "^3.0.2",
+    "nuxt-simple-sitemap": "^4.4.1",
     "tsparticles": "^3.8.1",
     "tsparticles-engine": "^2.12.0",
     "tsparticles-preset-links": "^2.12.0",

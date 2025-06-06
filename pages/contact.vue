@@ -19,3 +19,16 @@
         </section>
     </main>
 </template>
+<script setup>
+useHead({
+    title: 'Contact | Hair Salon らしさ。',
+    meta: [
+        { name: 'description', content: 'Hair Salon らしさ。へのお問い合わせはこちらから。ご予約やご質問はお気軽にどうぞ。' },
+        { property: 'og:title', content: 'Contact | Hair Salon らしさ。' },
+        { property: 'og:description', content: 'Hair Salon らしさ。は、ナチュラルな雰囲気でくつろげる美容室。あなたらしいスタイルを一緒に見つけます。' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: `${process.env.NUXT_PUBLIC_SITE_URL}/contact` },
+    ],
+    link: [{ rel: 'canonical', href: `${process.env.NUXT_PUBLIC_SITE_URL}/contact` }]
+})
+</script>

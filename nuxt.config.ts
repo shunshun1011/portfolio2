@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const { apiKey, baseURL, serviceDomain} = process.env
+const { apiKey, baseURL, serviceDomain } = process.env
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "dayjs-nuxt",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/sitemap",
+    "nuxt-simple-sitemap",
   ],
   image: {
     screens: {
@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     public: {
       passURL: process.env.BASE_URL,
       serviceDomain: process.env.SERVICE_DOMAIN,
+      baseURL: process.env.BASE_URL,
     },
     passKey: process.env.API_KEY,
   },
@@ -49,13 +50,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  /*
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL,
+  },
   sitemap: {
-    hostname: "https://example.com",
-    routes: async () => {
-      const res = await fetch("https://example.microcms.io/api/v1/info");
-      const posts = await res.json();
-      return posts.contents.map((post) => `/info/${post.id}`);
-    },
-  },*/
+    siteUrl: "http://localhost:3000", // ← ここをあなたの本番URLに変更
+    trailingSlash: false,
+  } as any,
 });

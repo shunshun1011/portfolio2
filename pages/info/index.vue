@@ -8,8 +8,8 @@
                 <div class="text-center mt-12">
                     <NuxtLink to="#body" href="'#'+body" class="block" v-smooth-scroll>
                         <small class="text-sm text-tertiary-900 mb-0"> Scroll </small>
-                        <img class="h-6 w-6 mx-auto animate-bounce text-tertiary-900" src="/assets/images/scroll.svg" width="48"
-                            height="48" alt="scroll" />
+                        <img class="h-6 w-6 mx-auto animate-bounce text-tertiary-900" src="/assets/images/scroll.svg"
+                            width="48" height="48" alt="scroll" />
                     </NuxtLink>
                 </div>
             </div>
@@ -31,3 +31,18 @@
         </section>
     </main>
 </template>
+<script setup>
+useHead({
+    title: 'お知らせ一覧 | Hair Salon らしさ',
+    meta: [
+        { name: 'description', content: 'Hair Salon らしさ。の最新情報やキャンペーンなどのお知らせ一覧です。' },
+        { property: 'og:title', content: 'お知らせ一覧 | Hair Salon らしさ' },
+        { property: 'og:description', content: 'カット・カラーの最新情報やお知らせなどをご確認いただけます。' },
+        { property: 'og:type', content: 'website' },
+        {
+            property: 'og:url', content: `${process.env.NUXT_PUBLIC_SITE_URL}/info`
+        },
+    ],
+    link: [{ rel: 'canonical', href: `${process.env.NUXT_PUBLIC_SITE_URL}/info` }]
+})
+</script>
