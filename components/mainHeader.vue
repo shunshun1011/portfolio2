@@ -1,11 +1,10 @@
 <template>
   <header>
     <div class="bg-primary-300">
-      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
           <a href="/" aria-label="HairSalon らしさ。" title="HairSalon らしさ。" class="inline-flex items-center">
-            <img src="~/assets/images/logo.svg" alt="ロゴ" class="w-8 text-tertiary-900" />
-            <span class="ml-2 text-xl font-bold tracking-wide text-tertiary-900 uppercase">らしさ。</span>
+            <img src="~/assets/images/logo.svg" alt="ロゴ" class="h-12 text-tertiary-900" />
           </a>
           <ul class="items-center hidden space-x-8 lg:flex">
             <li>
@@ -42,8 +41,7 @@
                 <div class="flex items-center justify-between mb-4">
                   <div>
                     <a href="/" aria-label="YAMAUCHI" title="YAMAUCHI" class="inline-flex items-center">
-                      <img src="~/assets/images/logo.svg" alt="ロゴ" class="w-8 text-tertiary-900" />
-                      <span class="ml-2 text-xl font-bold tracking-wide text-tertiary-900 uppercase">らしさ</span>
+                      <img src="~/assets/images/logo.svg" alt="ロゴ" class="h-12 text-tertiary-900" />
                     </a>
                   </div>
                   <div>
