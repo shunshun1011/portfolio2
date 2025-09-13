@@ -45,11 +45,15 @@ const priceList = [
   {
     title: "Cut",
     options: [
-      { label: "一般", price: "¥6,000" },
-      { label: "高校生", price: "¥5,000" },
-      { label: "中学生以下", price: "¥3,000" },
-      { label: "小学生未満", price: "¥2,000" },
-      { label: "前髪カット", price: "¥1,100" }
+      { label: "カット", price: "¥5,500" },
+      { label: "専門・大学生", price: "¥5,000" },
+      { label: "高校生", price: "¥4,510" },
+      { label: "中学生", price: "¥3,960" },
+      { label: "小学生", price: "¥3,300" },
+      { label: "未就学児", price: "¥2,000" },
+      { label: "前髪カット", price: "¥1,100" },
+      { label: "シャンプー無し", price: "¥-500" },
+      { label: "中学生までシャンプーの有無選べます", price: ""}
     ]
   },
   {

@@ -16,7 +16,7 @@
       </div>
     </section>
     <section id="body">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container md:px-14 px-5 py-24 mx-auto">
         <article class="prose lg:prose-lg max-w-none prose-img:rounded-xl prose-img:mx-auto prose-img:my-4">
           <div v-html="article.content"></div>
         </article>

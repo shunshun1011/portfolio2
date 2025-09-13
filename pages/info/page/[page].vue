@@ -15,7 +15,7 @@
             </div>
         </section>
         <section class="text-tertiary-600 body-font" id="body">
-            <div class="container px-5 md:py-16 py-8 mx-auto">
+            <div class="container md:px-12 px-5 md:py-16 py-8 mx-auto">
                 <div class="flex flex-wrap w-full">
                     <div class="w-full mb-6">
                         <h1 class="sm:text-3xl text-2xl title-font font-bold mb-2 text-tertiary-900 text-center">

@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { createClient } from "microcms-js-sdk";
+const client = createClient({
+  serviceDomain: process.env.SERVICE_DOMAIN || "",
+  apiKey: process.env.API_KEY || "",
+});
 const { apiKey, baseURL, serviceDomain } = process.env
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
@@ -54,7 +59,26 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL,
   },
   sitemap: {
-    siteUrl: "http://localhost:3000", // ← ここをあなたの本番URLに変更
-    trailingSlash: false,
-  } as any,
+    // 動的なルートを設定します
+    // 'urls' オプションに、URLオブジェクトの配列を返す関数を指定します
+    urls: async () => {
+      try {
+        const { contents } = await client.get({
+          endpoint: "info", // microCMSのブログエンドポイント名に合わせる
+          queries: { limit: 100 }, // 全ての記事を取得するため、上限を大きく設定
+        });
+
+        // 取得した記事からURLオブジェクトの配列を作成
+        return contents.map((content: any) => ({
+          loc: `/info/${content.id}`, // パスを指定
+          // 最終更新日や変更頻度などを設定することもできます
+          // lastmod: content.updatedAt,
+          // changefreq: 'weekly',
+        }));
+      } catch (error) {
+        console.error("Failed to fetch blog posts from microCMS:", error);
+        return [];
+      }
+    },
+  },
 });
